@@ -1,0 +1,37 @@
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  .logo-text {
+    margin-left: 17px;
+    font-size: 13px;
+  }
+}
+
+.main-logo {
+  height: 50px;
+  // display: inline-block;
+  max-width: 255px;
+}
+
+.vitek-logo {
+  width: 142px;
+  height: 40px;
+}
+
+.rondell-logo {
+  width: 156px;
+  height: 38px;
+}
+
+.maxwell-logo {
+  width: 108px;
+  height: 43px;
+}
+
+.basket-icon {
+  width: 32px;
+  height: 32px;
+  color: #2c3a57;
+}

@@ -1,0 +1,76 @@
+.top-block {
+    background: #fff;
+    padding: 15px 22px;
+}
+
+.top-content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: #2c3a57;
+}
+
+.brand-logos {
+    margin-left: auto;
+}
+
+.basket {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center
+}
+
+.basket-logo {
+    position: relative;
+    span {
+        position: absolute;
+        background: #d20131;
+        color: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: block;
+        width: 17px;
+        height: 17px;
+        font-size: 9px;
+        font-family: $font-primary-semibold;
+        text-align: center;
+        line-height: 13px;
+        top: 0;
+        right: -9px;
+    }
+}
+
+.basket-sum {
+    font-size: 25px;
+    font-family: $font-primary-medium;
+    color: #2c3a57;
+    margin-left: 12px;
+}
+
+.basket-link {
+    margin-left: 70px;
+}
+
+.basket-link:hover {
+    text-decoration: none;
+}
+
+.brand-logos {
+    a + a {
+        margin-left: 40px;
+    }
+}
+
+.header-contacts {
+    p {
+        margin-bottom: 0;
+    }
+    .header-tel {
+        font-size: 15px;
+        font-family: $font-primary-bold;
+    }
+    .header-shedule {
+        font-size: 12px;
+        font-family: $font-primary-regular;
+    }
+}

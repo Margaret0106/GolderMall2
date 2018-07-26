@@ -1,0 +1,336 @@
+{% extends "layouts/default.njk" %} {% set main = true %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="banners-block">
+        <div class="main-slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="">
+                <div class="slide-content">
+                  <div class="slide-content--category">Техника для кухни</div>
+                  <div class="slide-content--title">Правильное заваривание чая</div>
+                  <div class="slide-content--text">
+                    <p>Чайник VT-7047</p>
+                    <p>Электронная регулировка 60 - 100 C°</p>
+                    <p>Приготовит любой напиток правильно</p>
+                  </div>
+                  <a href="" class="btn">Посмотреть</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="">
+                <div class="slide-content">
+                  <div class="slide-content--category">Техника для кухни</div>
+                  <div class="slide-content--title">Правильное заваривание чая</div>
+                  <div class="slide-content--text">
+                    <p>Чайник VT-7047</p>
+                    <p>Электронная регулировка 60 - 100 C°</p>
+                    <p>Приготовит любой напиток правильно</p>
+                  </div>
+                  <a href="" class="btn">Посмотреть</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="">
+                <div class="slide-content">
+                  <div class="slide-content--category">Техника для кухни</div>
+                  <div class="slide-content--title">Правильное заваривание чая</div>
+                  <div class="slide-content--text">
+                    <p>Чайник VT-7047</p>
+                    <p>Электронная регулировка 60 - 100 C°</p>
+                    <p>Приготовит любой напиток правильно</p>
+                  </div>
+                  <a href="" class="btn">Посмотреть</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+        <div class="main-banner">
+          <a href="">
+            <img src="images/banner1.jpg" alt="">
+            <div class="action-label">
+              <span>АКЦИЯ</span>
+              <div class="action-size">-30%</div>
+              <div class="action-date">до 25.07</div>
+            </div>
+            <div class="action-text">
+              Набор ножей
+              <br> Röndell Lagsax
+              <br> 7 предметов RD-316
+            </div>
+            <div class="action-price">
+              <div class="old-price">9990 ₽</div>
+              <div class="new-price">5990 ₽</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-catalog liders-catalog">
+      <div class="main-catalog--title">Лидеры продаж</div>
+      <div class="catalog-slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">Пылесосы</div>
+                  <img src="images/catalog1.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Пылесос с аквафильтром VITEK VT-1835 B</div>
+                  <div class="catalog-item--price">8990 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">воки</div>
+                  <img src="images/catalog3.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Вок с крышкой Röndell Mocco 4.5 л RDA-552</div>
+                  <div class="catalog-item--price">6590 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">кастрюли</div>
+                  <img src="images/catalog4.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кастрюля Röndell Mocco 3.5 л RDA-281</div>
+                  <div class="catalog-item--price">6490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">кофеварки</div>
+                  <img src="images/catalog2.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кофеварка VITEK VT-1513 BK</div>
+                  <div class="catalog-item--price">8490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">Пылесосы</div>
+                  <img src="images/catalog1.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Пылесос с аквафильтром VITEK VT-1835 B</div>
+                  <div class="catalog-item--price">8990 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">воки</div>
+                  <img src="images/catalog3.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Вок с крышкой Röndell Mocco 4.5 л RDA-552</div>
+                  <div class="catalog-item--price">6590 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">кастрюли</div>
+                  <img src="images/catalog4.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кастрюля Röndell Mocco 3.5 л RDA-281</div>
+                  <div class="catalog-item--price">6490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">кофеварки</div>
+                  <img src="images/catalog2.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кофеварка VITEK VT-1513 BK</div>
+                  <div class="catalog-item--price">8490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">Пылесосы</div>
+                  <img src="images/catalog1.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Пылесос с аквафильтром VITEK VT-1835 B</div>
+                  <div class="catalog-item--price">8990 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">воки</div>
+                  <img src="images/catalog3.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Вок с крышкой Röndell Mocco 4.5 л RDA-552</div>
+                  <div class="catalog-item--price">6590 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">кастрюли</div>
+                  <img src="images/catalog4.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кастрюля Röndell Mocco 3.5 л RDA-281</div>
+                  <div class="catalog-item--price">6490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">кофеварки</div>
+                  <img src="images/catalog2.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кофеварка VITEK VT-1513 BK</div>
+                  <div class="catalog-item--price">8490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">Пылесосы</div>
+                  <img src="images/catalog1.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Пылесос с аквафильтром VITEK VT-1835 B</div>
+                  <div class="catalog-item--price">8990 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">воки</div>
+                  <img src="images/catalog3.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Вок с крышкой Röndell Mocco 4.5 л RDA-552</div>
+                  <div class="catalog-item--price">6590 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item kitchen">
+                <a href="">
+                  <div class="catalog-item--category">кастрюли</div>
+                  <img src="images/catalog4.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кастрюля Röndell Mocco 3.5 л RDA-281</div>
+                  <div class="catalog-item--price">6490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog-item technic">
+                <a href="">
+                  <div class="catalog-item--category">кофеварки</div>
+                  <img src="images/catalog2.jpg" alt="" class="catalog-item--image">
+                  <div class="catalog-item--title">Кофеварка VITEK VT-1513 BK</div>
+                  <div class="catalog-item--price">8490 ₽</div>
+                  <a href="" class="catalog-basket">
+                    <svg class="basket-icon">
+                      <use href="#basket-icon" />
+                    </svg>
+                  </a>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
