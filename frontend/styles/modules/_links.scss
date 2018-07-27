@@ -9,3 +9,11 @@
     color: $color-primary;
   }
 }
+
+a {
+  color: inherit;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}

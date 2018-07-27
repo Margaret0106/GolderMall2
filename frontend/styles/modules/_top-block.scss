@@ -1,6 +1,9 @@
 .top-block {
     background: #fff;
-    padding: 15px 22px;
+    padding: 20px;
+    @media (max-width: 1366px) {
+        padding: 10px;
+    }
 }
 
 .top-content {
@@ -12,6 +15,9 @@
 
 .brand-logos {
     margin-left: auto;
+    a {
+        display: inline-block
+    }
 }
 
 .basket {
@@ -45,10 +51,16 @@
     font-family: $font-primary-medium;
     color: #2c3a57;
     margin-left: 12px;
+    @media (max-width: 1440px) {
+        font-size: 20px;
+    }
 }
 
 .basket-link {
     margin-left: 70px;
+    @media (max-width: 1440px) {
+        margin-left: 45px;
+    }    
 }
 
 .basket-link:hover {
@@ -58,6 +70,9 @@
 .brand-logos {
     a + a {
         margin-left: 40px;
+        @media (max-width: 1440px) {
+            margin-left: 20px;
+        }
     }
 }
 
@@ -68,9 +83,15 @@
     .header-tel {
         font-size: 15px;
         font-family: $font-primary-bold;
+        @media (max-width: 1440px) {
+            font-size: 12px;
+        }
     }
     .header-shedule {
         font-size: 12px;
         font-family: $font-primary-regular;
+        @media (max-width: 1440px) {
+            font-size: 10px;
+        }
     }
 }

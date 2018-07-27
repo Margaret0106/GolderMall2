@@ -28,7 +28,7 @@
 	align-items: center;
 	align-content: center;
 	text-decoration: none !important;
-	transition: color .3s;
+	transition: color .3s, background-color .3s;
 	outline: none !important;	
 	font-weight: normal;
 	line-height: 1;	
@@ -41,6 +41,7 @@
 	&:focus  {		
 		color: #fff;
 		transition: none;
+		background: #bd1547;
 	}
 }
 
@@ -61,6 +62,9 @@
 		@media (max-width: 1440px) {
 			font-size: 18px;
 		}
+		@media (max-width: 1366px) {
+			font-size: 16px;
+		}
 		& + .nav-item {
 			border-left: 1px solid #246cab;
 		}		
@@ -69,5 +73,33 @@
 		color: #fff;
 		fill: #fff;
 		margin-right: 10px;
+	}
+}
+
+.footer-menu {
+	margin-bottom: 40px;
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			color: #2c3a57;
+			font-size: 13px;
+			text-transform: uppercase;
+			@media (max-width: 1440px) {
+				font-size: 12px;
+			}
+			a {
+				color: inherit;
+			}
+			&:hover {
+				a {
+					color: #bd1547;
+					text-decoration: none;
+				}
+			}
+		}
+		li + li {
+			margin-left: 20px;
+		}
 	}
 }

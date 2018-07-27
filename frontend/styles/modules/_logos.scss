@@ -6,6 +6,9 @@
   .logo-text {
     margin-left: 17px;
     font-size: 13px;
+    @media (max-width: 1440px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -13,25 +16,41 @@
   height: 50px;
   // display: inline-block;
   max-width: 255px;
+  @media (max-width: 1600px) {
+    max-width: 205px;
+  }
 }
 
 .vitek-logo {
   width: 142px;
   height: 40px;
+  @media (max-width: 1440px) {
+    width: 110px;
+  }
 }
 
 .rondell-logo {
   width: 156px;
   height: 38px;
+  @media (max-width: 1440px) {
+    width: 120px;
+  }
 }
 
 .maxwell-logo {
   width: 108px;
   height: 43px;
+  @media (max-width: 1440px) {
+    width: 82px;
+  }
 }
 
 .basket-icon {
   width: 32px;
   height: 32px;
   color: #2c3a57;
+  @media (max-width: 1440px) {
+    width: 26px;
+    height: 26px;
+  }
 }

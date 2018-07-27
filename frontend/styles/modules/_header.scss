@@ -5,5 +5,32 @@
     &--content {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+    a.btn {
+        vertical-align: middle;
+        font-size: 11px;
+        color: inherit;
+        svg {
+            vertical-align: top;
+            margin-right: 5px;
+        }
     }
 }
+
+.search-form {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-right: 85px;
+    button {
+        vertical-align: top;
+        padding: 0;
+        svg {
+            display: block;
+            margin-right: 3px;
+        }
+    }
+}
+
