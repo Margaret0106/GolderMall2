@@ -198,21 +198,236 @@
         </g>
       </symbol>
     </svg>
-    <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal fade" tabindex="-1" role="dialog" id="registration-modal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title">Modal title</h4>
+            <h4 class="modal-title">Регистрация</h4>
           </div>
           <div class="modal-body">
-            <p>One fine body&hellip;</p>
+            <p>Для регистрации на сайте, пожалуйста, заполните все поля</p>
+            <form action="" class="form registration-form">
+              <div class="form-group">
+                <input type="text" placeholder="Имя" class="form-control"> </div>
+              <div class="form-group">
+                <input type="text" placeholder="Фамилия" class="form-control"> </div>
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" class="form-control"> </div>
+              <div class="form-group">
+                <input type="text" placeholder="Телефон" class="form-control"> </div>
+              <div class="form-group">
+                <input type="password" placeholder="Пароль" class="form-control"> </div>
+              <div class="form-group">
+                <input type="password" placeholder="Повторите пароль" class="form-control"> </div>
+              <div class="form-group">
+                <input id="checkbox1" type="checkbox" value="option1">
+                <label for="checkbox1" class="checkbox-inline">Принимаю
+                  <a href="">политику конфиденциальности</a>
+                </label>
+                <input id="checkbox2" type="checkbox" value="option1">
+                <label for="checkbox2" class="checkbox-inline">Подписаться на рассылку</label>
+              </div>
+              <button type="submit" class="btn btn-blue">Зарегистрироваться</button>
+            </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="registration-success-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Регистрация</h4>
+          </div>
+          <div class="modal-body">
+            <p>Письмо с подтверждением регистрации направлено на ваш e-mail</p>
+            <a href="" class="red-link">Авторизация</a>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="authorization-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Вход на сайт</h4>
+          </div>
+          <div class="modal-body">
+            <p>Для входа на сайт необходима авторизация</p>
+            <form action="" class="form authorization-form">
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" class="form-control"> </div>
+              <div class="form-group">
+                <input type="password" placeholder="Пароль" class="form-control"> </div>
+              <button type="submit" class="btn btn-blue">Войти на сайт</button>
+            </form>
+            <a href="" class="red-link">Забыли пароль?</a>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="password-recovery-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Восстановление пароля</h4>
+          </div>
+          <div class="modal-body">
+            <p>Пожалуйста, введите e-mail, указанный при регистрации</p>
+            <form action="" class="form registration-form">
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" class="form-control"> </div>
+              <button type="submit" class="btn btn-blue">Восстановить пароль</button>
+            </form>
+            <a href="" class="red-link">Авторизация</a>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="password-recovery-success-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Восстановление пароля</h4>
+          </div>
+          <div class="modal-body">
+            <p>Инструкции по восстановлению пароля отправлены на ваш e-mail</p>
+            <a href="" class="red-link">Авторизация</a>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="search-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Поиск продукции</h4>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form search-form">
+              <div class="form-group">
+                <input type="text" placeholder="Что будем искать?" class="form-control"> </div>
+              <button type="submit" class="btn btn-blue">Найти</button>
+            </form>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="question-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Задать вопрос</h4>
+          </div>
+          <div class="modal-body">
+            <p>Есть вопросы, пожелания? Просто напишите нам.</p>
+            <form action="" class="form question-form">
+              <div class="form-group half">
+                <input type="text" placeholder="Имя" class="form-control">
+                <input type="text" placeholder="Фамилия" class="form-control"> </div>
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" class="form-control"> </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Ваше сообщение" name="" id="" cols="30" rows="7"></textarea>
+              </div>
+              <button type="submit" class="btn btn-blue">Отправить сообщение</button>
+              <div class="form-group centered">
+                <input id="checkbox-conf" type="checkbox" value="option1">
+                <label for="checkbox-conf" class="checkbox-inline">Принимаю
+                  <a href="">политику конфиденциальности</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="question-success-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Задать вопрос</h4>
+          </div>
+          <div class="modal-body">
+            <p>Ваше сообщение было успешно отправлено. Мы постараемся ответить вам как можно скорее. </p>
+          </div>
+        </div>
+        <!-- end .modal-content -->
+      </div>
+      <!-- end .modal-dialog -->
+    </div>
+    <!-- end .modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="callback-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Обратный звонок</h4>
+          </div>
+          <div class="modal-body">
+            <p>Заполните форму и мы перезвоним вам в ближайшее время*</p>
+            <form action="" class="form question-form">
+              <div class="form-group half">
+                <input type="text" placeholder="Имя" class="form-control">
+                <input type="text" placeholder="Фамилия" class="form-control"> </div>
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" class="form-control"> </div>
+              <button type="submit" class="btn btn-blue">Заказать звонок</button>
+              <div class="form-group centered">
+                <input id="checkbox-conf2" type="checkbox" value="option1">
+                <label for="checkbox-conf2" class="checkbox-inline">Принимаю
+                  <a href="">политику конфиденциальности</a>
+                </label>
+              </div>
+              <div class="form-note">* Наши менеджеры перезвонят Вам в течение 30 минут после отправки сообщения. Звонки осуществляются в рабочее время с 9:00 до 18:00. Выходные - суббота, воскресенье.</div>
+            </form>
           </div>
         </div>
         <!-- end .modal-content -->
@@ -235,22 +450,16 @@
                 <a href="">Доставка</a>
               </li>
               <li>
-                <a href="">Обзоры</a>
+                <a href="">Новости</a>
               </li>
             </ul>
           </div>
           <div class="header-menu">
-            <div class="search-form">
-              <form action="">
-                <button>
-                  <svg class="search-icon">
-                    <use xlink:href="#search-icon"></use>
-                  </svg>
-                </button>
-                <span>Поиск по сайту</span>
-              </form>
-            </div>
-            <a href="" class="btn btn-link">
+            <a href="" data-toggle="modal" data-target="#search-modal" class="btn btn-link">
+              <svg class="search-icon">
+                <use xlink:href="#search-icon"></use>
+              </svg> Поиск по сайту </a>
+            <a href="" data-toggle="modal" data-target="#registration-modal" class="btn btn-link">
               <svg class="user-icon">
                 <use xlink:href="#user-icon"></use>
               </svg> Личный кабинет </a>
@@ -966,11 +1175,11 @@
             </div>
             <div class="footer-column">
               <div class="footer-link">
-                <a href="" class="btn btn-link">
+                <a href="" data-toggle="modal" data-target="#callback-modal" class="btn btn-link">
                   <svg class="call-icon">
                     <use xlink:href="#call-icon"></use>
                   </svg> обратный звонок </a>
-                <a href="" class="btn btn-link">
+                <a href="" data-toggle="modal" data-target="#question-modal" class="btn btn-link">
                   <svg class="quest-icon">
                     <use xlink:href="#quest-icon"></use>
                   </svg> задать вопрос </a>

@@ -3,11 +3,15 @@
   height: 40px;
   padding: 10px 16px 12px;
   font-family: $font-primary-regular;
-  font-size: 16px;
-  border: 1px solid #d2d7da;
-  border-radius: 3px;
+  font-size: 18px;
+  border: 1px solid #bcbdbe;
+  border-radius: 0;
   box-shadow: none;
   transition: border $transition-primary;
+  text-align: left;
+  @media (max-width: 1600px) {
+    font-size: 16px;
+  }
   &:hover {
     border-color: rgba($color-primary,.45);
     transition: none;
@@ -34,6 +38,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }          
+}
+
+.form-group {
+  margin-bottom: 10px;
+  &.centered {
+    text-align: center;
+    input[type="checkbox"] + label {
+      text-align: center;
+    }
+  }
+  &.half {
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 48%;
+    }
+  }
 }
 
 .control-label {
@@ -96,4 +117,67 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  & + label {
+    padding-left: 0;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 13px;
+    margin-right: 30px;
+    text-align: left;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #bcbdbe;
+      margin-right: 10px;
+      position: relative;
+      top: 3px;
+    }
+    &:after  {
+      content: "";
+    }
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  &:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #414d67;
+    left: 3px;
+    top: 6px;    
+    background: #414d67;
+  }
+  &:before {   
+    content: ""; 
+    border: 1px solid #414d67;    
+  }
+}
+
+.form {
+  text-align: center;
+  .btn {
+    margin: 20px auto;
+  }
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-note {
+  font-size: 11px;
+  line-height: 18px;
+  margin-bottom: 20px;
 }

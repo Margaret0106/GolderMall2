@@ -18,19 +18,9 @@
     }
 }
 
-.search-form {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 11px;
-    text-transform: uppercase;
-    margin-right: 85px;
-    button {
-        vertical-align: top;
-        padding: 0;
-        svg {
-            display: block;
-            margin-right: 3px;
-        }
+
+.header-menu {
+    a + a {
+        margin-left: 80px;
     }
 }
-
