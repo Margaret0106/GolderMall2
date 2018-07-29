@@ -16,11 +16,21 @@
             margin-right: 5px;
         }
     }
+    @media (max-width: 1170px) {
+        display: none;
+    }
 }
 
 
 .header-menu {
     a + a {
         margin-left: 80px;
+    }
+}
+
+.mobile-header {
+    display: none;
+    @media(max-width:1170px) {
+        display: block;
     }
 }

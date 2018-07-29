@@ -48,6 +48,15 @@
 	fill: #bd1547;
 	width: 15px;
 	height: 15px;
+	.mobile-header & {
+		width: 23px;
+		height: 23px;
+		display: block;
+		@media (max-width: 425px) {
+			width: 18px;
+			height: 18px;
+		}
+	}
 }
 
 .user-icon {
@@ -74,6 +83,13 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 15px;
+	@media (max-width: 1170px) {
+		margin-right: 50px;
+	}
+	@media (max-width: 640px) {
+		margin-right: 20px;
+	}
+	
 	span {
 		display: block;
 		background: #fff;
@@ -82,6 +98,22 @@
 		@media (max-width: 1366px) {
 			width: 20px;
 			height: 2px;
+		}
+	}
+	.mobile-menu-link & {
+		span {
+			background: #414d67;
+			height: 4px;
+			width: 26px;
+			@media (max-width: 425px) {
+				height: 3px;
+				width: 20px;
+			}
+		}
+		@media (max-width: 425px) {
+			span + span {
+				margin-top: 5px;
+			}
 		}
 	}
 	span + span {

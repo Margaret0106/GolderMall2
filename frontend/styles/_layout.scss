@@ -19,9 +19,16 @@ body {
   @media (max-width: 1400px) {
     padding: 0 20px;
   }
+  @media (max-width: 1170px) {
+    padding: 0 10px;
+  }
 }
 
-.main {}
+.main {
+  @media (max-width: 1170px) {
+    margin: 10px auto;
+  }
+}
 
 .footer-block {
   background: #fff;
@@ -44,10 +51,18 @@ body {
   .footer-content {
     display: flex;
     align-items: flex-end;
+    @media (max-width: 1170px) {
+      flex-wrap: wrap;
+    }
   }
   .footer-column {
     width: 33.33%;
     flex: 1;
+    @media (max-width: 1170px) {
+      width: 100%;
+      flex: auto;
+      text-align: center;
+    }
     p {
       margin-bottom: 0;
       font-size: 13px;

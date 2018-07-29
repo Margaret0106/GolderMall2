@@ -330,6 +330,7 @@ gulp.task('build-markup', [
   'productionModeFalse',
   'useref', 
   'images', 
+  'fonts',
   'pics', 
   'extras'
   ], () => {
@@ -350,6 +351,7 @@ gulp.task('build-production', [
   'useref', 
   'images', 
   'icons',
+  'fonts',
   'extras'
   ], () => {
   return gulp.src([PATHS.build + '/**/*.*', '!' + PATHS.build + '/media/**/*.*'])

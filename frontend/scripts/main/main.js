@@ -33,6 +33,10 @@ $(document).ready(function () {
       el: '.liders-catalog .swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.liders-catalog .swiper-button-next',
+      prevEl: '.liders-catalog .swiper-button-prev',
+    },
     breakpoints: {
       // when window width is <= 320px
       320: {
@@ -40,17 +44,24 @@ $(document).ready(function () {
         // spaceBetween: 10
       },
       // when window width is <= 480px
-      480: {
-        // slidesPerView: 2,
-        // spaceBetween: 20
+      560: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 8
+      },
+      750: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 8
       },
       // when window width is <= 640px
-      640: {
-        // slidesPerView: 3,
-        // spaceBetween: 30
+      991: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 8
       },
       // when window width is <= 1440px
-      1440: {
+      1280: {
         slidesPerView: 5,
         slidesPerGroup: 5,
         spaceBetween: 8
@@ -67,6 +78,10 @@ $(document).ready(function () {
       el: '.news-catalog .swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.news-catalog .swiper-button-next',
+      prevEl: '.news-catalog .swiper-button-prev',
+    },
     breakpoints: {
       // when window width is <= 320px
       320: {
@@ -74,17 +89,25 @@ $(document).ready(function () {
         // spaceBetween: 10
       },
       // when window width is <= 480px
-      480: {
-        // slidesPerView: 2,
-        // spaceBetween: 20
+      560: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 8
       },
       // when window width is <= 640px
-      640: {
-        // slidesPerView: 3,
-        // spaceBetween: 30
+      750: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 8
       },
       // when window width is <= 1440px
-      1440: {
+      991: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 8
+      },
+      // when window width is <= 1440px
+      1280: {
         slidesPerView: 5,
         slidesPerGroup: 5,
         spaceBetween: 8
