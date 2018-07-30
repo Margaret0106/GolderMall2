@@ -1,12 +1,16 @@
 'use strict';
 
-import myModule from './module-to-import';
+// import Inputmask from "inputmask";
 
 $(document).ready(function () {
 
   $('.selectpicker').selectpicker({
     size: 4
   });
+
+  // Inputmask('999 9 9 9 9').mask('.tel-input');
+
+
 
   var mySwiper = new Swiper('.main-slider .swiper-container', {
     loop: true,
@@ -115,6 +119,14 @@ $(document).ready(function () {
     }
   });
 
-  // imported module
-  myModule('myModule');
+  $('body').on('click', '.next-modal', function (e) {
+    e.preventDefault();
+    let nextModal = $(this).data('target');
+    console.log(nextModal);
+    $(this).closest('.modal').modal('hide');
+    setTimeout(function () {
+      $(nextModal).modal('show');
+    }, 500)
+  })
+
 });

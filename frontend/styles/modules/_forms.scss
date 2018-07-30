@@ -51,8 +51,17 @@
   &.half {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+    }
     input {
       width: 48%;
+      @media (max-width: 480px) {
+        width: 100%;
+        & + input {
+          margin-top: 10px;
+        }       
+      }
     }
   }
 }

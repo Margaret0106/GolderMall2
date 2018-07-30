@@ -63,6 +63,18 @@ body {
       flex: auto;
       text-align: center;
     }
+    @media (max-width: 640px) {
+      &:last-child {
+        order: 1;
+        margin-bottom: 15px;
+      }
+      &:first-child {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+    }
     p {
       margin-bottom: 0;
       font-size: 13px;
@@ -70,6 +82,123 @@ body {
       @media (max-width: 1366px) {
         font-size: 12px;
       }
-    }    
+    }
+  }
+}
+
+.main-block {
+  margin: 25px 0;
+  padding: 20px;
+  background: #fff;
+}
+
+.column-content {
+  display: flex;
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+  .main-column {
+    width: 65%;
+    padding-right: 35px;
+    margin: 20px 0;
+    @media (max-width: 1440px) {
+      padding-right: 25px;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin: 0;
+    }
+    @media (max-width: 640px) {
+      padding-right: 0px;
+    }
+  }
+  .side-column {
+    width: 35%;
+    border-left: 1px solid #b7c2ce;
+    padding-left: 50px;
+    margin: 20px 0;
+    @media (max-width: 1440px) {
+      padding-left: 30px;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+      border-left: 0;
+      padding: 0;
+      margin-top: 35px;
+    }
+  }
+}
+
+.article-content {
+  padding: 0 20px 30px;
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+  li {
+    font-size: 18px;
+    line-height: 27px;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @media (max-width: 640px) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 640px) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-column {
+  h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+    @media (max-width: 1600px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @media (max-width: 640px) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    br + br {
+      display: none;
+    }
   }
 }

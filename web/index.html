@@ -20,6 +20,10 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <svg width="0" height="0" style="position: absolute;">
+      <symbol id="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38">
+        <g id="Слой_2" data-name="Слой 2">
+          <path id="Layer_1" d="M50 19a2.5 2.5 0 0 0-.5-1.31l-15-17a2 2 0 0 0-2.83-.16 2 2 0 0 0-.17 2.78L43.59 17H2a2 2 0 0 0 0 4h41.59L31.5 34.69a1.94 1.94 0 0 0 .26 2.81 1.88 1.88 0 0 0 2.74-.18l15-17A2 2 0 0 0 50 19z" data-name="Layer 1" /> </g>
+      </symbol>
       <symbol id="quest-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.53 26.66">
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">
@@ -215,22 +219,22 @@
               <div class="form-group">
                 <input type="text" placeholder="Фамилия" class="form-control"> </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail" class="form-control"> </div>
+                <input type="text" placeholder="E-mail" class="form-control email-input"> </div>
               <div class="form-group">
-                <input type="text" placeholder="Телефон" class="form-control"> </div>
+                <input type="text" placeholder="Телефон" class="form-control tel-input"> </div>
               <div class="form-group">
-                <input type="password" placeholder="Пароль" class="form-control"> </div>
+                <input type="password" id="password" placeholder="Пароль" class="form-control password-input"> </div>
               <div class="form-group">
-                <input type="password" placeholder="Повторите пароль" class="form-control"> </div>
+                <input type="password" id="password-repeat" placeholder="Повторите пароль" class="form-control password-input"> </div>
               <div class="form-group">
-                <input id="checkbox1" type="checkbox" value="option1">
+                <input id="checkbox1" type="checkbox" value="option1" class="required-checkbox">
                 <label for="checkbox1" class="checkbox-inline">Принимаю
                   <a href="">политику конфиденциальности</a>
                 </label>
                 <input id="checkbox2" type="checkbox" value="option1">
                 <label for="checkbox2" class="checkbox-inline">Подписаться на рассылку</label>
               </div>
-              <button type="submit" class="btn btn-blue">Зарегистрироваться</button>
+              <button type="submit" class="btn btn-blue next-modal" data-target="#registration-success-modal" disabled>Зарегистрироваться</button>
             </form>
           </div>
         </div>
@@ -250,7 +254,7 @@
           </div>
           <div class="modal-body">
             <p>Письмо с подтверждением регистрации направлено на ваш e-mail</p>
-            <a href="" class="red-link">Авторизация</a>
+            <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
           </div>
         </div>
         <!-- end .modal-content -->
@@ -271,12 +275,12 @@
             <p>Для входа на сайт необходима авторизация</p>
             <form action="" class="form authorization-form">
               <div class="form-group">
-                <input type="email" placeholder="E-mail" class="form-control"> </div>
+                <input type="text" placeholder="E-mail" class="form-control email-input"> </div>
               <div class="form-group">
                 <input type="password" placeholder="Пароль" class="form-control"> </div>
-              <button type="submit" class="btn btn-blue">Войти на сайт</button>
+              <button type="submit" class="btn btn-blue" disabled>Войти на сайт</button>
             </form>
-            <a href="" class="red-link">Забыли пароль?</a>
+            <a href="" class="red-link next-modal" data-target="#password-recovery-modal">Забыли пароль?</a>
           </div>
         </div>
         <!-- end .modal-content -->
@@ -297,10 +301,10 @@
             <p>Пожалуйста, введите e-mail, указанный при регистрации</p>
             <form action="" class="form registration-form">
               <div class="form-group">
-                <input type="email" placeholder="E-mail" class="form-control"> </div>
-              <button type="submit" class="btn btn-blue">Восстановить пароль</button>
+                <input type="text" placeholder="E-mail" class="form-control email-input"> </div>
+              <button type="submit" class="btn btn-blue" disabled>Восстановить пароль</button>
             </form>
-            <a href="" class="red-link">Авторизация</a>
+            <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
           </div>
         </div>
         <!-- end .modal-content -->
@@ -319,7 +323,7 @@
           </div>
           <div class="modal-body">
             <p>Инструкции по восстановлению пароля отправлены на ваш e-mail</p>
-            <a href="" class="red-link">Авторизация</a>
+            <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
           </div>
         </div>
         <!-- end .modal-content -->
@@ -365,11 +369,11 @@
                 <input type="text" placeholder="Имя" class="form-control">
                 <input type="text" placeholder="Фамилия" class="form-control"> </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail" class="form-control"> </div>
+                <input type="text" placeholder="E-mail" class="form-control email-input"> </div>
               <div class="form-group">
                 <textarea class="form-control" placeholder="Ваше сообщение" name="" id="" cols="30" rows="7"></textarea>
               </div>
-              <button type="submit" class="btn btn-blue">Отправить сообщение</button>
+              <button type="submit" class="btn btn-blue next-modal" data-target="#question-success-modal">Отправить сообщение</button>
               <div class="form-group centered">
                 <input id="checkbox-conf" type="checkbox" value="option1">
                 <label for="checkbox-conf" class="checkbox-inline">Принимаю
@@ -418,8 +422,8 @@
                 <input type="text" placeholder="Имя" class="form-control">
                 <input type="text" placeholder="Фамилия" class="form-control"> </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail" class="form-control"> </div>
-              <button type="submit" class="btn btn-blue">Заказать звонок</button>
+                <input type="text" placeholder="E-mail" class="form-control email-input"> </div>
+              <button type="submit" class="btn btn-blue next-modal" data-target="#question-success-modal">Заказать звонок</button>
               <div class="form-group centered">
                 <input id="checkbox-conf2" type="checkbox" value="option1">
                 <label for="checkbox-conf2" class="checkbox-inline">Принимаю
@@ -472,6 +476,20 @@
         <div class="top-block">
           <header class="header">
             <div class="top-content">
+              <div class="mobile-header">
+                <a href="" class="mobile-menu-link">
+                  <span class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </a>
+                <a href="" data-toggle="modal" data-target="#search-modal" class="btn btn-link">
+                  <svg class="search-icon">
+                    <use xlink:href="#search-icon"></use>
+                  </svg>
+                </a>
+              </div>
               <div class="logo">
                 <svg class="main-logo">
                   <use href="#main-logo" /> </svg>
@@ -599,18 +617,19 @@
             </div>
             <div class="main-banner">
               <a href="">
-                <img src="images/banner1.jpg" alt="">
+                <img src="images/banner-img.jpg" alt="">
                 <div class="action-label">
                   <span>АКЦИЯ</span>
                   <div class="action-size">-30%</div>
                   <div class="action-date">до 25.07</div>
                 </div>
-                <div class="action-text"> Набор ножей
-                  <br> Röndell Lagsax
-                  <br> 7 предметов RD-316 </div>
-                <div class="action-price">
-                  <div class="old-price">9990 ₽</div>
-                  <div class="new-price">5990 ₽</div>
+                <div class="action-info">
+                  <div class="action-text"> Набор ножей Röndell Lagsax
+                    <br> 7 предметов RD-316 </div>
+                  <div class="action-price">
+                    <div class="old-price">9990 ₽</div>
+                    <div class="new-price">5990 ₽</div>
+                  </div>
                 </div>
               </a>
             </div>
@@ -621,6 +640,16 @@
           <div class="catalog-slider">
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="prev-arrow">
+                <use xlink:href="#arrow-icon"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="next-arrow">
+                <use xlink:href="#arrow-icon"></use>
+              </svg>
+            </div>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -856,6 +885,16 @@
           <div class="catalog-slider">
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <svg class="prev-arrow">
+                <use xlink:href="#arrow-icon"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="next-arrow">
+                <use xlink:href="#arrow-icon"></use>
+              </svg>
+            </div>
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1193,5 +1232,6 @@
     <script src="scripts/vendor.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script src="scripts/main.min.js"></script>
+    <script src="scripts/forms.js"></script>
   </body>
 </html>

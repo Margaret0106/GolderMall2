@@ -54,6 +54,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.13.1",
+    "inputmask": "^4.0.0",
     "jquery": "^1.11.3",
     "jquery-ui": "^1.12.1",
     "modernizr": "^3.5.0",

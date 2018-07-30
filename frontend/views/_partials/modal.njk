@@ -17,20 +17,20 @@
             <input type="text" placeholder="Фамилия" class="form-control">
           </div>
           <div class="form-group">
-            <input type="email" placeholder="E-mail" class="form-control">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Телефон" class="form-control">
+            <input type="text" placeholder="Телефон" class="form-control tel-input">
           </div>
           <div class="form-group">
-            <input type="password" placeholder="Пароль" class="form-control">
+            <input type="password" id="password" placeholder="Пароль" class="form-control password-input">
           </div>
           <div class="form-group">
-            <input type="password" placeholder="Повторите пароль" class="form-control">
+            <input type="password" id="password-repeat" placeholder="Повторите пароль" class="form-control password-input">
           </div>
 
           <div class="form-group">
-            <input id="checkbox1" type="checkbox" value="option1">
+            <input id="checkbox1" type="checkbox" value="option1" class="required-checkbox">
             <label for="checkbox1" class="checkbox-inline">Принимаю
               <a href="">политику конфиденциальности</a>
             </label>
@@ -39,7 +39,7 @@
             <label for="checkbox2" class="checkbox-inline">Подписаться на рассылку</label>
           </div>
 
-          <button type="submit" class="btn btn-blue">Зарегистрироваться</button>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#registration-success-modal" disabled>Зарегистрироваться</button>
         </form>
       </div>
 
@@ -61,7 +61,7 @@
       </div>
       <div class="modal-body">
         <p>Письмо с подтверждением регистрации направлено на ваш e-mail</p>
-        <a href="" class="red-link">Авторизация</a>
+        <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
       </div>
 
     </div>
@@ -85,17 +85,17 @@
         <form action="" class="form authorization-form">
 
           <div class="form-group">
-            <input type="email" placeholder="E-mail" class="form-control">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
           <div class="form-group">
             <input type="password" placeholder="Пароль" class="form-control">
           </div>
 
 
-          <button type="submit" class="btn btn-blue">Войти на сайт</button>
+          <button type="submit" class="btn btn-blue" disabled>Войти на сайт</button>
         </form>
 
-        <a href="" class="red-link">Забыли пароль?</a>
+        <a href="" class="red-link next-modal" data-target="#password-recovery-modal">Забыли пароль?</a>
       </div>
 
     </div>
@@ -119,13 +119,13 @@
         <form action="" class="form registration-form">
 
           <div class="form-group">
-            <input type="email" placeholder="E-mail" class="form-control">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
 
-          <button type="submit" class="btn btn-blue">Восстановить пароль</button>
+          <button type="submit" class="btn btn-blue" disabled>Восстановить пароль</button>
         </form>
 
-        <a href="" class="red-link">Авторизация</a>
+        <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
       </div>
 
     </div>
@@ -147,7 +147,7 @@
       <div class="modal-body">
         <p>Инструкции по восстановлению пароля отправлены на ваш e-mail</p>
 
-        <a href="" class="red-link">Авторизация</a>
+        <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
       </div>
 
     </div>
@@ -204,13 +204,13 @@
           </div>
 
           <div class="form-group">
-            <input type="email" placeholder="E-mail" class="form-control">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
           <div class="form-group">
             <textarea class="form-control" placeholder="Ваше сообщение" name="" id="" cols="30" rows="7"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-blue">Отправить сообщение</button>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#question-success-modal">Отправить сообщение</button>
 
           <div class="form-group centered">
             <input id="checkbox-conf" type="checkbox" value="option1">
@@ -269,10 +269,10 @@
           </div>
 
           <div class="form-group">
-            <input type="email" placeholder="E-mail" class="form-control">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
 
-          <button type="submit" class="btn btn-blue">Заказать звонок</button>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#question-success-modal">Заказать звонок</button>
 
           <div class="form-group centered">
             <input id="checkbox-conf2" type="checkbox" value="option1">

@@ -128,7 +128,7 @@ gulp.task('useref-assets', ['views', 'styles', 'scripts'], () => {
   // to speed up build process
   return gulp.src(PATHS.tmp + '/index.html')
     .pipe($.useref({searchPath: [PATHS.tmp, PATHS.src, '.']}))
-    .pipe( $.if('*.js', $.uglify({compress: { drop_console: true }})
+    .pipe( $.if(['**/*.js', '!**/forms.js'], $.uglify({compress: { drop_console: true }})
       .on('error', function(err) { console.error(err); })) )
     .pipe( $.if('*.css', $.postcss([cssnano({ safe: true, autoprefixer: false })])) )
     .pipe( $.if('!*.html', gulp.dest(PATHS.build)) ) 
