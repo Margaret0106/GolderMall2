@@ -1,0 +1,44 @@
+.catalog-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -9px;
+    @media (max-width: 1170px) {
+        margin: 0 -9px;
+    }
+    @media (max-width: 640px) {
+        margin: 0 -3px;
+    }
+    .catalog-item {
+        width: calc(16.666% - 18px);
+        margin: 0 9px;
+        background: #fff;
+        position: relative;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: left;
+        @media (max-width: 1170px) {
+            margin: 0 5px 10px;
+            width: calc(33.33% - 10px);
+        }
+        @media (max-width: 640px) {
+            width: calc(50% - 6px);
+            margin: 0 3px 6px;
+        }
+        &--title {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.models-count {
+    font-family: $font-primary-medium;
+    font-size: 10px;
+    color: #70859e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.brands-catalog {
+    text-align: center
+}
