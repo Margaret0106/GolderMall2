@@ -1,0 +1,222 @@
+{% extends "layouts/default.njk" %} {% set main = true %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            Карта сайта
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="back-arrow">
+          <use xlink:href="#arrow-icon"></use>
+        </svg>
+        на главную</a>
+      <h1>Карта сайта</h1>
+    </div>
+
+    <section class="main-block">
+      <div class="sitemap-list">
+        <div class="sitemap-column">
+          <div class="sitemap-title">
+            <a href="">Техника для кухни</a>
+          </div>
+          <dl>
+            <dt>
+              <a href="">Приготовление горячих напитков</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3 например будет написана в две строки</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Обработка продуктов</dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Приготовление пищи</dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="sitemap-column">
+          <div class="sitemap-title">
+            <a href="">Техника для дома</a>
+          </div>
+          <dl>
+            <dt>
+              <a href="">Уход за домом</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <a href="">Уход за одеждой</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <a href="">Климатическая техника</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <a href="">Портативное аудио</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="sitemap-column">
+          <div class="sitemap-title">
+            <a href="">Персональный уход</a>
+          </div>
+          <dl>
+            <dt>
+              <a href="">Персональный уход</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <a href="">Красота и здоровье</a>
+            </dt>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="sitemap-column">
+          <div class="sitemap-title">
+            <a href="">Посуда</a>
+          </div>
+          <dl>
+            <dd>
+              <a href="">Категория 1</a>
+            </dd>
+            <dd>
+              <a href="">Категория 2</a>
+            </dd>
+            <dd>
+              <a href="">Категория 3</a>
+            </dd>
+            <dd>
+              <a href="">Категория 4</a>
+            </dd>
+            <dd>
+              <a href="">Категория 5</a>
+            </dd>
+            <dd>
+              <a href="">Категория 6</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="sitemap-column">
+          <div class="sitemap-title">
+            <a href="">О магазине</a>
+          </div>
+          <dl>
+            <dd>
+              <a href="">Оплата</a>
+            </dd>
+            <dd>
+              <a href="">Доставка</a>
+            </dd>
+            <dd>
+              <a href="">Информация для покупателей</a>
+            </dd>
+            <dd>
+              <a href="">Бренды</a>
+            </dd>
+            <dd>
+              <a href="">Новости</a>
+            </dd>
+            <dd>
+              <a href="">Личный кабинет</a>
+            </dd>
+          </dl>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}

@@ -57,6 +57,27 @@ h2 {
 	@media (max-width: 480px) {
 		font-size: 18px;
 	}	
+	&.article-title {
+		font-size: 50px;
+		@media (max-width: 1600px){
+			font-size: 45px;
+		}
+		@media (max-width: 1366px){
+			font-size: 40px;
+		}
+		@media (max-width: 1024px){
+			font-size: 35px;
+		}
+		@media (max-width: 767px){
+			font-size: 30px;
+		}
+		@media (max-width: 640px){
+			font-size: 25px
+		}
+		@media (max-width: 480px){
+			font-size: 20px
+		}
+	}
 }
 
 h4 {

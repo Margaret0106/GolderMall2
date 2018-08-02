@@ -20,7 +20,7 @@ a:hover, a:focus, a:active {
 
 a.back-link {
   float: right;
-  margin-top: 40px;
+  margin-top: 30px;
   text-transform: uppercase;
   font-size: 14px;
   font-family: $font-primary-bold;
@@ -29,6 +29,11 @@ a.back-link {
   }
   svg {
     margin-right: 10px;
+  }
+  .article-content & {
+    float: none;
+    margin-top: 20px;
+    display: inline-block;
   }
 }
 
