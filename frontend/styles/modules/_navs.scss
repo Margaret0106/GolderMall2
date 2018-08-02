@@ -200,3 +200,51 @@
 		}
 	}
 }
+
+.pagination {
+	display: block;
+	ul {
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				width: 40px;
+				height: 40px;
+				background: #aebbc8;
+				line-height: 40px;
+				font-size: 20px;
+				font-family: $font-primary-medium;
+				color: #fff;
+				@media (max-width: 1280px) {
+					width: 35px;
+					height: 35px;					
+					line-height: 35px;
+					font-size: 17px;
+				}
+				@media (max-width: 640px) {
+					width: 30px;
+					height: 30px;					
+					line-height: 30px;
+					font-size: 14px;
+				}
+			}
+			&.active {
+				a {
+					background: #055fad;
+					pointer-events: none;
+				}
+			}
+			&:hover {
+				a {
+					background: #055fad;
+				}
+			}
+		}
+		li + li {
+			margin-left: 10px;
+		}
+	}
+}

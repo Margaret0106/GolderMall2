@@ -19,6 +19,8 @@ h1 {
 	margin-top: 10px;
 	.top-block & {
 		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: middle;
 		@media (max-width: 1024px) {
 			margin: 10px 0;
 		}

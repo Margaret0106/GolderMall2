@@ -4,13 +4,11 @@
 
 $(document).ready(function () {
 
-  $('.selectpicker').selectpicker({
+  $('select').selectpicker({
     size: 4
   });
 
   // Inputmask('999 9 9 9 9').mask('.tel-input');
-
-
 
   var mySwiper = new Swiper('.main-slider .swiper-container', {
     loop: true,
