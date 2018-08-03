@@ -12,6 +12,7 @@
 				&:hover{
 					text-decoration: none;
 					color: #bd1547;
+					color: #055fad;
 				}
 			}
 		}
@@ -41,13 +42,19 @@
 	&:focus  {		
 		color: #fff;
 		transition: none;
-		background: #bd1547;
+		background: #3a3655;
 	}
 }
 
 .main-menu {
 	background: #055fad;
 	margin: 23px 0;
+	&.pink-menu {
+		background: #bd1547;
+		.nav-item + .nav-item {
+			border-left: 1px solid #bd1547;
+		} 
+	}
 	@media (max-width: 1170px) {
 		display: none;
 	}
@@ -69,7 +76,7 @@
 			font-size: 16px;
 		}
 		& + .nav-item {
-			border-left: 1px solid #246cab;
+			border-left: 1px solid #246cab;			
 		}		
 	}	
 	.menu-icons {
@@ -102,6 +109,7 @@
 			&:hover {
 				a {
 					color: #bd1547;
+					color: #055fad;
 					text-decoration: none;
 				}
 			}
