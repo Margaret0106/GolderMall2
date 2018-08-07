@@ -43,16 +43,20 @@
 	a.red-link {
 		margin-top: 40px;
 		margin-bottom: 30px;
-		color: #bd1547;
-		font-size: 18px;
-		display: inline-block;
-		text-decoration: underline;
-		&:hover {
-			text-decoration: none;
-		}
+		font-size: 18px;		
 	}
 }
-
+a.red-link {	
+	color: #bd1547;	
+	display: inline-block;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+	& + a.red-link {
+		margin-left: 20px;
+	}
+}
 .modal-dialog {
 	width: 650px;
 	max-width: 100%;

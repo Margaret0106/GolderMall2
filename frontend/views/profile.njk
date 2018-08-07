@@ -1,0 +1,70 @@
+{% extends "layouts/default.njk" %} {% set profile = true %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            Личный кабинет
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="logout-icon">
+          <use xlink:href="#logout-icon"></use>
+        </svg>Выйти</a>
+      <h1>Личный кабинет</h1>
+    </div>
+
+    <section class="main-block">
+      <div class="page-nav">
+        <ul>
+          <li class="active">
+            <a href="profile.html">Профиль</a>
+          </li>
+          <li>
+            <a href="history.html">История заказов</a>
+          </li>
+        </ul>
+      </div>
+      <div class="article-content">
+        <table>
+          <tr>
+            <td>Имя</td>
+            <td>Константин</td>
+          </tr>
+          <tr>
+            <td>Фамилия</td>
+            <td>Константинопольский</td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td><a href="mailto:konstantin@konstantinopolsky.ru">konstantin@konstantinopolsky.ru</a></td>
+          </tr>
+          <tr>
+            <td>Телефон</td>
+            <td>+7 (987) 654-32-10</td>
+          </tr>
+          <tr>
+            <td>Рассылки</td>
+            <td>
+              <input id="checkbox123" type="checkbox" checked readonly value="option1" class="required-checkbox">
+              <label for="checkbox123" style="pointer-events: none"  class="checkbox-inline">Подписан</label>
+            </td>
+          </tr>
+        </table>
+        <a href="" data-toggle="modal" data-target="#password-change-modal" class="red-link">Сменить пароль</a>
+        <a href="" data-toggle="modal" data-target="#email-change-modal" class="red-link">Сменить e-mail</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}

@@ -37,3 +37,16 @@
         display: block;
     }
 }
+
+
+.profile-top {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 70px;
+    a + a {
+        margin-left: 25px;
+    }
+    .logout-icon {
+        color: #d20131;
+    }
+}

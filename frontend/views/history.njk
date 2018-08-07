@@ -1,0 +1,132 @@
+{% extends "layouts/default.njk" %} {% set profile = true %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            Личный кабинет
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="logout-icon">
+          <use xlink:href="#logout-icon"></use>
+        </svg>Выйти</a>
+      <h1>Личный кабинет</h1>
+    </div>
+
+    <section class="main-block">
+      <div class="page-nav">
+        <ul>
+          <li>
+            <a href="profile.html">Профиль</a>
+          </li>
+          <li class="active">
+            <a href="history.html">История заказов</a>
+          </li>
+        </ul>
+      </div>
+      <div class="article-content">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading active" role="tab" id="headingOne">
+              <div class="order-info">
+                <div class="order-number">
+                  <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    № 1234567890
+                  </a>
+                </div>
+                <div class="order-date">от 15.06.2017</div>
+                <div class="order-price">Стоимость заказа: 123456789 ₽ </div>
+                <div class="order-status">Статус заказа:
+                  <span class="status-process">В обработке</span>
+                </div>
+              </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <table class="order-table">
+                  <tr>
+                    <th></th>
+                    <th>наименование</th>
+                    <th>цена</th>
+                    <th>количество</th>
+                    <th>сумма</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="order-image" src="images/order1.jpg" alt="">
+                    </td>
+                    <td>Пылесос с аквафильтром VITEK VT-1835 B</td>
+                    <td>8990 ₽</td>
+                    <td>100</td>
+                    <td>899000 ₽</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img class="order-image" src="images/order2.jpg" alt="">
+                    </td>
+                    <td>Набор посуды Röndell Flamme 8 предметов RDS-040 </td>
+                    <td>8990 ₽</td>
+                    <td>100</td>
+                    <td>899000 ₽</td>
+                  </tr>
+
+
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}

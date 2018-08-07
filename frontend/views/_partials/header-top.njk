@@ -18,19 +18,36 @@
         </ul>
       </div>
       <div class="header-menu">
-
         <a href="" data-toggle="modal" data-target="#search-modal" class="btn btn-link">
             <svg class="search-icon">
                 <use xlink:href="#search-icon"></use>
               </svg>
             Поиск по сайту
           </a>
-        <a href="" data-toggle="modal" data-target="#registration-modal" class="btn btn-link">
+          {% if profile %}
+          
+          <div class="profile-top">
+            <a href="profile.html" data-toggle="modal" data-target="#registration-modal" class="btn btn-link">
+              <svg class="user-icon">
+                <use xlink:href="#user-icon"></use>
+              </svg>
+              konstantin@konstantinopolsky.ru
+            </a>
+            <a href="#" data-toggle="modal" data-target="#registration-modal" class="btn btn-link">
+              <svg class="logout-icon">
+                <use xlink:href="#logout-icon"></use>
+              </svg>
+              Выйти
+            </a>
+          </div>
+          {% else %} 
+        <a href="#" data-toggle="modal" data-target="#registration-modal" class="btn btn-link">
           <svg class="user-icon">
             <use xlink:href="#user-icon"></use>
           </svg>
           Личный кабинет
         </a>
+        {% endif %}
       </div>
     </div>
   </div>

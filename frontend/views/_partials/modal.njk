@@ -1,3 +1,4 @@
+<!-- Регистрация -->
 <div class="modal fade" tabindex="-1" role="dialog" id="registration-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -50,6 +51,7 @@
 </div>
 <!-- end .modal -->
 
+<!-- Регистрация - сообщение-->
 <div class="modal fade" tabindex="-1" role="dialog" id="registration-success-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -71,6 +73,7 @@
 </div>
 <!-- end .modal -->
 
+<!-- Вход -->
 <div class="modal fade" tabindex="-1" role="dialog" id="authorization-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -105,6 +108,7 @@
 </div>
 <!-- end .modal -->
 
+<!-- Восстановление пароля -->
 <div class="modal fade" tabindex="-1" role="dialog" id="password-recovery-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -122,19 +126,18 @@
             <input type="text" placeholder="E-mail" class="form-control email-input">
           </div>
 
-          <button type="submit" class="btn btn-blue" disabled>Восстановить пароль</button>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#password-recovery-success-modal" disabled>Восстановить пароль</button>
         </form>
 
         <a href="" class="red-link next-modal" data-target="#authorization-modal">Авторизация</a>
       </div>
 
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
 </div>
 <!-- end .modal -->
 
+<!-- Восстановление пароля - сообщение-->
 <div class="modal fade" tabindex="-1" role="dialog" id="password-recovery-success-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -151,12 +154,11 @@
       </div>
 
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
 </div>
 <!-- end .modal -->
 
+<!-- Поиск -->
 <div class="modal fade" tabindex="-1" role="dialog" id="search-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -180,12 +182,11 @@
       </div>
 
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
 </div>
 <!-- end .modal -->
 
+<!-- Задать вопрос -->
 <div class="modal fade" tabindex="-1" role="dialog" id="question-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -221,14 +222,12 @@
 
         </form>
       </div>
-
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
 </div>
 <!-- end .modal -->
 
+<!-- Задать вопрос - сообщение-->
 <div class="modal fade" tabindex="-1" role="dialog" id="question-success-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -240,17 +239,13 @@
       </div>
       <div class="modal-body">
         <p>Ваше сообщение было успешно отправлено. Мы постараемся ответить вам как можно скорее. </p>
-
       </div>
-
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
 </div>
 <!-- end .modal -->
 
-
+<!-- Обратный звонок -->
 <div class="modal fade" tabindex="-1" role="dialog" id="callback-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -281,15 +276,101 @@
             </label>
           </div>
 
-          <div class="form-note">* Наши менеджеры перезвонят Вам в течение 30 минут после отправки сообщения. 
-            Звонки осуществляются в рабочее время с 9:00 до 18:00. Выходные - суббота, воскресенье.</div>
-
+          <div class="form-note">* Наши менеджеры перезвонят Вам в течение 30 минут после отправки сообщения. Звонки осуществляются в рабочее время
+            с 9:00 до 18:00. Выходные - суббота, воскресенье.</div>
         </form>
       </div>
-
     </div>
-    <!-- end .modal-content -->
   </div>
-  <!-- end .modal-dialog -->
+</div>
+<!-- end .modal -->
+
+<!-- Смена e-mail -->
+<div class="modal fade" tabindex="-1" role="dialog" id="email-change-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Смена e-mail</h4>
+      </div>
+      <div class="modal-body">
+        <p>Пожалуйста, укажите новый e-mail</p>
+        <form action="" class="form registration-form">
+          <div class="form-group">
+            <input type="text" placeholder="E-mail" class="form-control email-input">
+          </div>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#email-change-success-modal" disabled>Сменить e-mail</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end .modal -->
+
+<!-- Смена e-mail - cообщение-->
+<div class="modal fade" tabindex="-1" role="dialog" id="email-change-success-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Смена e-mail</h4>
+      </div>
+      <div class="modal-body">
+        <p>Необходимо подтвердить новый адрес. На указанный e-mail отправлено письмо с подтверждением. Проверьте ваш ящик.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end .modal -->
+
+<!-- Смена пароля -->
+<div class="modal fade" tabindex="-1" role="dialog" id="password-change-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Смена пароля</h4>
+      </div>
+      <div class="modal-body">
+        <p>Пожалуйста, введите текущий и новый пароли</p>
+        <form action="" class="form registration-form">
+          <div class="form-group">
+            <input type="password" placeholder="Текущий пароль" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Новый пароль" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Повторите новый пароль" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-blue next-modal" data-target="#password-change-success-modal" disabled>Сменить пароль</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end .modal -->
+
+<!-- Смена пароля - cообщение-->
+<div class="modal fade" tabindex="-1" role="dialog" id="password-change-success-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Смена пароля</h4>
+      </div>
+      <div class="modal-body">
+        <p>Ваш пароль успешно изменен.</p>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- end .modal -->
