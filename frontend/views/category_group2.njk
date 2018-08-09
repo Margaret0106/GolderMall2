@@ -1,0 +1,43 @@
+{% extends "layouts/default.njk" %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            Персональный уход
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="back-arrow">
+          <use xlink:href="#arrow-icon"></use>
+        </svg>назад</a>
+      <h1>Персональный уход</h1>
+    </div>
+
+    <section class="main-block transparent-block">
+      <div class="category-group category-group-2">
+        <div class="category-group__item">
+          <a href=""></a>
+          <img src="images/cat1.jpg" alt="Уход за волосами">
+          <div class="category-group__title">Уход за волосами</div>
+        </div>
+        <div class="category-group__item">
+          <a href=""></a>
+          <img src="images/cat2.jpg" alt="Красота и здоровье">
+          <div class="category-group__title">Красота и здоровье</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}

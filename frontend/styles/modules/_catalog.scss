@@ -42,3 +42,120 @@
 .brands-catalog {
     text-align: center
 }
+
+.category-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &.category-group-3 {
+        .category-group__item {
+            width: calc(33.33% - 10px);
+            @media (max-width: 850px) {
+                width: 100%;
+            }
+        }
+    }
+    &.category-group-4 {
+        .category-group__item {
+            width: calc(50% - 15px);
+            @media (max-width: 850px) {
+                width: 100%;
+            }
+        }
+        img {
+            max-height: 350px;
+        }
+    }
+    &__item {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 850px) {
+            width: 100%;
+        }
+        a {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        img {
+            max-width: 100%;
+            width: 100%;
+            transition: .5s;
+            height: 100%;
+            object-fit: cover;
+            max-height: 450px;
+            @media (max-width: 850px) {
+                max-height: 275px !important;
+            }
+        }
+        &:hover {
+            .category-group__title {
+                background: #003872;
+                background: rgba(0, 56, 114, .4);
+            }
+            img {
+                opacity: .8;
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__title {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        line-height: 38px;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: -.25px;
+        .category-group-3 & {
+            font-size: 27px;
+            line-height: 29px;
+            @media (max-width: 1200px) {
+                font-size: 27px;
+            }
+            @media (max-width: 640px) {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 1200px) {
+            font-size: 27px;
+        }
+        @media (max-width: 640px) {
+            font-size: 18px;
+        }
+    }
+}
+
+img.desktop {
+    display: block;
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+img.tablet {
+    display: none;
+    @media (max-width: 1200px) and (min-width: 851px) {
+        display: block;
+    }
+}
+
+img.mobile {
+    display: none;
+    @media (max-width: 850px) {
+        display: block;
+    }
+}

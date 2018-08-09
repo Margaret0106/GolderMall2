@@ -1,0 +1,55 @@
+{% extends "layouts/default.njk" %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+              Техника для кухни
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="back-arrow">
+          <use xlink:href="#arrow-icon"></use>
+        </svg>назад</a>
+      <h1>Техника для кухни</h1>
+    </div>
+
+    <section class="main-block transparent-block">
+      <div class="category-group category-group-3">
+        <div class="category-group__item">
+          <a href=""></a>
+          <img src="images/cat3-desc.jpg" class="desktop" alt="">
+          <img src="images/cat3.jpg" class="tablet" alt="">
+          <img src="images/cat3-mobile.jpg" alt="" class="mobile">
+          <div class="category-group__title">Приготовление
+              горячих напитков</div>
+        </div>
+        <div class="category-group__item">
+          <a href=""></a>
+          <img src="images/cat4-desc.jpg" class="desktop" alt="">
+          <img src="images/cat4.jpg" class="tablet" alt="">
+          <img src="images/cat4-mobile.jpg" alt="" class="mobile">
+          <div class="category-group__title">Обработка продуктов</div>
+        </div>
+        <div class="category-group__item">
+            <a href=""></a>
+            <img src="images/cat5-desc.jpg" class="desktop" alt="">
+            <img src="images/cat5.jpg" class="tablet" alt="">
+            <img src="images/cat5-mobile.jpg" alt="" class="mobile">
+            <div class="category-group__title">Приготовление пищи</div>
+          </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{% endblock %}
