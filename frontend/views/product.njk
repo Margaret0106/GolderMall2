@@ -1,0 +1,167 @@
+{% extends "layouts/default.njk" %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <a href="" class="back-link product-back-link">
+        <svg class="back-arrow">
+          <use xlink:href="#arrow-icon"></use>
+        </svg>к списку товаров
+      </a>
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            <a href="">мелкая бытовая техника</a>
+          </li>
+          <li>
+            пылесосы
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="main-block">
+      <div class="product-card">
+        <div class="product-card__image">
+          <div class="slider-pro" id="my-slider">
+            <div class="sp-slides">
+              <!-- Slide 1 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="sp-slide">
+                <img src="images/slider1.jpg" alt="">
+              </div>
+            </div>
+            <div class="sp-thumbnails">
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+              <img class="sp-thumbnail" src="images/slider1.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <h1>Пылесос с аквафильтром VITEK VT-1833 PR</h1>
+          <p>Система фильтрации с применением аква- и НЕРА-фильтров в пылесосе VITEK VT-1833 PR позволяет блокировать микроэлементы.
+            С помощью турбощетки можно удалить шерсть и волосы, что сделает уборку еще качественнее.</p>
+          <div class="page-anchors">
+            <a href="">Характеристики</a>
+            <a href="">Аксессуары</a>
+          </div>
+          <div class="product-card__buttons">
+            <div class="product-card__price">
+              <span class="price">
+                <strong>9990</strong> ₽</span>
+              <span class="status">товар в наличии</span>
+            </div>
+            <a href="" class="btn btn-blue">В корзину</a>
+            <a href="" class="btn btn-white">Купить в 1 клик</a>
+          </div>
+          <div class="special-offer">
+            Нашли дешевле? Cнизим цену для вас!
+          </div>
+          <div class="special-info">
+            <div class="special-info__item">
+              <svg class="delivery-icon">
+                <use xlink:href="#delivery-icon"></use>
+              </svg>
+              Бесплатная доставка от 3000 рублей
+            </div>
+            <div class="special-info__item">
+              <svg class="like-icon">
+                <use xlink:href="#like-icon"></use>
+              </svg>
+              Понравился пылесос с аквафильтром VITEK VT-1833 PR? Расскажи друзьям!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

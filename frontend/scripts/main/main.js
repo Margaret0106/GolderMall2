@@ -137,4 +137,79 @@ $(document).ready(function () {
   });
 
 
+  // Instantiate a slider
+
+  let sliderRange, mySlider;
+
+  mySlider = $("input.slider").slider({
+    range: true,
+    tooltip: 'hide'
+  });
+
+
+  if ($("input.slider").length > 0) {
+
+    sliderRange = mySlider.slider('getValue')
+    let min_rent = $("input.slider").data('slider-min'),
+      max_rent = $("input.slider").data('slider-max')
+
+    mySlider.on('change', function () {
+      let sliderRange = mySlider.slider('getValue');
+      $('.min-range-js').val(sliderRange[0]);
+      $('.max-range-js').val(sliderRange[1]);
+
+    }).change();
+
+
+    $('.min-range-js').on('change', function () {
+      let minVal = parseInt($(this).val());
+      let maxVal = parseInt($('.max-range-js').val());
+      minVal = Math.max(min_rent, minVal);
+      minVal = Math.min(minVal, maxVal);
+      $(this).val(minVal);
+
+      mySlider.slider('setValue', [minVal, maxVal]);
+    })
+
+    $('.max-range-js').on('change', function () {
+      let maxVal = parseInt($(this).val());
+      let minVal = parseInt($('.min-range-js').val());
+      maxVal = Math.max(minVal, maxVal);
+      maxVal = Math.min(maxVal, max_rent);
+      $(this).val(maxVal);
+      mySlider.slider('setValue', [minVal, maxVal])
+    })
+
+
+  }
+
+
+
+  $('.sidebar-toggle a').on('click', function (e) {
+    e.preventDefault();
+    let sidebar = $(this).closest('.sidebar')
+    sidebar.find('.filters').slideToggle();
+    sidebar.toggleClass('closed');
+    if (sidebar.hasClass('closed')) {
+      $(this).siblings('span').html('Показать фильтр')
+    } else {
+      $(this).siblings('span').html('Скрыть фильтр')
+    }
+  })
+
+
+  $('#my-slider').sliderPro({
+    responsive: true,
+    autoHeight: true,
+    thumbnailArrows: true,
+    thumbnailsPosition: 'bottom', 
+    buttons: false,
+    fadeThumbnailArrows: false,
+    autoplay: false,
+    // imageScaleMode: 'contain',  
+    // thumbnailTouchSwipe: true
+  });
+
+
+
 });

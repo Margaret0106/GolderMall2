@@ -1,0 +1,342 @@
+{% extends "layouts/default.njk" %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            <a href="">мелкая бытовая техника</a>
+          </li>
+          <li>
+            пылесосы
+          </li>
+        </ul>
+      </div>
+      <div class="filter-block transparent-filter">
+        <span>Показать: </span>
+        <select name="" id="">
+          <option value="">сначала дорогие</option>
+          <option value="">сначала дешевые</option>
+          <option value="">сначала дорогие</option>
+        </select>
+      </div>
+      <a href="" class="back-link">
+        <svg class="back-arrow">
+          <use xlink:href="#arrow-icon"></use>
+        </svg>к списку категорий</a>
+
+      <h1>Пылесосы</h1>
+
+    </div>
+
+    <section class="main-block transparent-block">
+      <div class="good-list">
+        <div class="sidebar">
+          <div class="sidebar-toggle">
+            <a href=""></a>
+            <span>скрыть фильтр </span>
+          </div>
+          <div class="filters">
+            <div class="filter-item">
+              <div class="filter-item__title">Тип пылесоса</div>
+              <div class="form-group">
+                <input id="checkbox123" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox123" class="checkbox-inline">Портативные пылесосы</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox124" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox124" class="checkbox-inline">Автомобильные пылесосы</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox125" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox125" class="checkbox-inline">Вертикальные пылесосы</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox126" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox126" class="checkbox-inline">Пылесосы с аквафильтром</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox127" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox127" class="checkbox-inline">Пылесосы с мешком для сбора пыли (вторая строка)</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox128" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox128" class="checkbox-inline">Без мешка для сбора пыли</label>
+              </div>
+            </div>
+            <div class="filter-item">
+              <div class="filter-item__title">Мощность</div>
+              <div class="form-group">
+                <input id="checkbox129" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox129" class="checkbox-inline">1400 Вт</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox130" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox130" class="checkbox-inline">1800 Вт</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox131" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox131" class="checkbox-inline">2000 Вт</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox132" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox132" class="checkbox-inline">2400 Вт</label>
+              </div>
+            </div>
+            <div class="filter-item">
+              <div class="filter-item__title">Производитель</div>
+              <div class="form-group">
+                <input id="checkbox133" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox133" class="checkbox-inline">VITEK</label>
+              </div>
+              <div class="form-group">
+                <input id="checkbox134" type="checkbox" value="option1" class="required-checkbox">
+                <label for="checkbox134" class="checkbox-inline">Maxwell</label>
+              </div>
+            </div>
+            <div class="filter-item">
+              <div class="filter-item__title">Цена</div>
+              <div class="slider-range">
+                <input type="number" min="1990" class="min-range-js">
+                <!-- мин значения указывать тут -->
+                <span> - </span>
+                <input type="number" max="15990" class="max-range-js">
+                <!-- макс значения указывать тут -->
+              </div>
+              <input type="text" class="slider" data-slider-min="1990" data-slider-max="15990">
+              <!--макс и мин значения указывать тут -->
+            </div>
+          </div>
+          <div class="filter-block transparent-filter">
+            <span>Показать: </span>
+            <select name="" id="">
+              <option value="">сначала дорогие</option>
+              <option value="">сначала дешевые</option>
+              <option value="">сначала дорогие</option>
+            </select>
+          </div>
+        </div>
+        <div class="center-goods">
+          <div class="catalog-block">
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <span class="label-new">
+                  NEW
+                </span>
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good1.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+            <div class="catalog-item technic">
+              <a href="">
+                <img src="images/good2.jpg" alt="" class="catalog-item--image">
+                <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+                <div class="catalog-item--price">5390 ₽</div>
+                <a href="" class="catalog-basket">
+                  <svg class="basket-icon">
+                    <use href="#basket-icon" />
+                  </svg>
+                </a>
+              </a>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li class="active">
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}
