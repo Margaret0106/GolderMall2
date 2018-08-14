@@ -1,0 +1,261 @@
+{% extends "layouts/default.njk" %} {% set profile = true %} {% block content %}
+
+
+<main class="main">
+  <div class="container">
+    <div class="top-block">
+      {% include "_partials/header.njk" %}
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <a href="">главная</a>
+          </li>
+          <li>
+            Корзина
+          </li>
+        </ul>
+      </div>
+      <a href="" class="back-link">
+        <svg class="logout-icon">
+          <use xlink:href="#logout-icon"></use>
+        </svg>назад</a>
+      <h1>Корзина покупателя</h1>
+    </div>
+
+    <section class="main-block">
+
+      <div class="article-content">
+        <div class="table-responsive">
+          <table class="order-table cart-table">
+            <tr>
+              <th></th>
+              <th>наименование</th>
+              <th>цена</th>
+              <th>количество</th>
+              <th>сумма</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td data-th="Наименование">
+                <img class="order-image" src="images/order1.jpg" alt="">
+              </td>
+              <td data-th="">Пылесос с аквафильтром VITEK VT-1835 B</td>
+              <td data-th="Цена">8990 ₽</td>
+              <td data-th="Кол-во" class="quantity">
+                <div class="input-group">
+                  <form id='myform' method='POST' action='#' class="numbo">
+                    <input type='button' value='-' class='qtyminus' field='quantity' style="font-weight: bold;" />
+                    <input type='text' name='quantity' value='1' class='qty' style="margin-bottom: 0px !important" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                    />
+                    <input type='button' value='+' class='qtyplus' field='quantity' style="font-weight: bold;" />
+                  </form>
+                </div>
+              </td>
+              <td data-th="Сумма">899000 ₽</td>
+              <td class="delete-td">
+                  <a class="delete-basket_item" data-entity="basket-item-delete"><img src="images/delete.png" alt=""></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-th="Наименование">
+                <img class="order-image" src="images/order2.jpg" alt="">
+              </td>
+              <td >Набор посуды Röndell Flamme 8 предметов RDS-040 </td>
+              <td data-th="Цена">8990 ₽</td>
+              <td data-th="Кол-во" class="quantity">
+                <div class="input-group">
+                  <form id='myform' method='POST' action='#' class="numbo">
+                    <input type='button' value='-' class='qtyminus' field='quantity' style="font-weight: bold;" />
+                    <input type='text' name='quantity' value='1' class='qty' style="margin-bottom: 0px !important" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                    />
+                    <input type='button' value='+' class='qtyplus' field='quantity' style="font-weight: bold;" />
+                  </form>
+                </div>
+              </td>
+              <td data-th="Сумма">899000 ₽</td>
+              <td class="delete-td">
+                  <a class="delete-basket_item" data-entity="basket-item-delete"><img src="images/delete.png" alt=""></a>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="main-block">
+      <div class="main-block--title">
+        Для оформления заказа заполните, пожалуйста, форму или авторизуйтесь
+      </div>
+      <form action="">
+        <div class="basket-order-container">
+          <div class="basket-order-half">
+            <h3 class="basket-order--title">Информация о доставке</h3>
+            <div class="radio-group">
+              <input id="delivery-type1" checked type="radio" name="delivery-type">
+              <label for="delivery-type1">Курьерская доставка</label>
+              <input id="delivery-type2" type="radio" name="delivery-type">
+              <label for="delivery-type2">Самовывоз</label>
+              <input id="delivery-type3" type="radio" name="delivery-type">
+              <label for="delivery-type3">Транспортная компания</label>
+
+            </div>
+
+            <input type="text" class="form-control" placeholder="Город">
+            <input type="text" class="form-control" placeholder="Адрес доставки">
+
+            <div class="input-half-container">
+              <div class="input-half-group">
+                <label for="">Желаемая дата доставки</label>
+                <div class="datepicker">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="input-half-group">
+                <label for="">Желаемое время доставки</label>
+                <select name="" class="selectpicker" id="">
+                  <option value="">9:00 - 15:00</option>
+                  <option value="">9:00 - 15:00</option>
+                  <option value="">9:00 - 15:00</option>
+                </select>
+              </div>
+            </div>
+            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Комментарий к заказу"></textarea>
+          </div>
+          <div class="basket-order-half">
+            <h3 class="basket-order--title">Информация о покупателе и оплате</h3>
+            <div class="radio-group">
+              <input id="payment-type1" checked type="radio" name="payment-type">
+              <label for="payment-type1">Оплата при получении </label>
+              <input id="payment-type2" type="radio" name="payment-type">
+              <label for="payment-type2">Безналичный расчет</label>
+            </div>
+            <div class="input-half-container">
+              <div class="input-half-group">
+                <input type="text" class="form-control" placeholder="Имя">
+                <input type="text" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="input-half-group">
+                <input type="text" class="form-control" placeholder="Фамилия">
+                <input type="text" class="form-control" placeholder="Телефон">
+
+              </div>
+            </div>
+            <div class="basket-order-result">
+              <div class="basket-order-result--item">
+                <span>Товаров в заказе на сумму</span>
+                <span>125000&nbsp;&#8381;</span>
+              </div>
+              <div class="basket-order-result--item">
+                <span>Доставка</span>
+                <span>400&nbsp;&#8381;</span>
+              </div>
+              <div class="basket-order-result--total">
+                <span>К оплате</span>
+                <span>125400&nbsp;&#8381;</span>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <div class="form-meta">
+                <div class="form-input">
+                    <input type="checkbox" id="reg-checkbox">
+                    <label for="reg-checkbox">Зарегистрироваться на сайте</label>
+                </div>
+                <div class="form-input">
+                    <input type="checkbox" id="conf-checkbox">
+                    <label for="conf-checkbox">Принимаю                
+                      <a href=""> политику конфиденциальности</a>
+                    </label>
+                </div>                
+              </div>
+
+              <button type="submit" class="btn btn-red">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="brands-catalog">
+        <h2 class="left-align">Вас может заинтересовать</h2>
+        <div class="catalog-block">
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good1.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good1.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good2.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good1.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good2.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+          <div class="catalog-item technic">
+            <a href="">
+              <img src="images/good1.jpg" alt="" class="catalog-item--image">
+              <div class="catalog-item--title">Пылесос без мешка для сбора пыли VITEK VT-8102 BD</div>
+              <div class="catalog-item--price">5390 ₽</div>
+              <a href="" class="catalog-basket">
+                <svg class="basket-icon">
+                  <use href="#basket-icon" />
+                </svg>
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</main>
+
+{% endblock %}

@@ -49,6 +49,7 @@
 .main-menu {
 	background: #055fad;
 	margin: 23px 0;
+	position: relative;
 	&.pink-menu {
 		background: #bd1547;
 		.nav-item + .nav-item {
@@ -157,7 +158,7 @@
 		padding: 0 20px;
 	}
 	@media (max-width: 991px) {
-		margin: -20px -20px 20px;
+		margin: -10px -10px 20px;
 	}
 	ul {
 		padding-left: 0;
@@ -209,6 +210,21 @@
 				margin-left: 15px;
 			}
 		}
+	}
+	&.page-nav-flex {
+		display: flex;
+		ul.page-nav-left {
+			width: 60%;
+		}
+		ul.page-nav-right {
+			width: 40%;
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+	.top-block & {
+		margin: 20px -20px -20px;
 	}
 }
 
@@ -262,4 +278,14 @@
 			margin-left: 10px;
 		}
 	}
+}
+
+.sub-menu-fullwidth {
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 50px;
+	background: #57546e;
+	display: block;
 }

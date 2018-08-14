@@ -83,6 +83,25 @@
 	}
 }
 
+.btn-red {
+	background: #bd1547;
+	border-radius: 0px;
+	vertical-align: middle;
+	font-size: 16px;
+	font-family: $font-primary-bold;
+	color: #fff;
+	padding: 17px 55px;
+	&:hover {
+		color: #fff;
+		background:lighten(#bd1547, 10%);
+	}
+	@media (max-width: 1500px) {
+		font-size: 13px;
+		padding: 13px 40px;
+	}
+}
+
+
 .btn-white {
 	background: #fff;
 	border-radius: 0px;

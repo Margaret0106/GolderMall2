@@ -4,6 +4,17 @@
 
 $(document).ready(function () {
 
+  $('a.local-scroll').on('click', function (e) {
+    e.preventDefault();
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  })
+
   $('select').selectpicker({
     size: 4
   });
@@ -202,13 +213,64 @@ $(document).ready(function () {
     responsive: true,
     autoHeight: true,
     thumbnailArrows: true,
-    thumbnailsPosition: 'bottom', 
+    thumbnailsPosition: 'bottom',
     buttons: false,
     fadeThumbnailArrows: false,
     autoplay: false,
     // imageScaleMode: 'contain',  
     // thumbnailTouchSwipe: true
   });
+
+
+
+  // This button will increment the value
+  $('.qtyplus').click(function (e) {
+    // Stop acting like a button
+    e.preventDefault();
+    // Get the field name
+    var fieldName = $(this).attr('field');
+    // Get its current value
+    var currentVal = parseInt($(this).parent().find('input[name=' + fieldName + ']').val());
+    // If is not undefined
+    if (!isNaN(currentVal)) {
+
+
+      $(this).parent().find('input[name=' + fieldName + ']').val(currentVal + 1);
+      $(this).parent().find('.qtyminus').val("-").removeAttr('style');
+
+
+    } else {
+      // Otherwise put a 0 there
+      $(this).parent().find('input[name=' + fieldName + ']').val(1);
+
+    }
+  });
+  // This button will decrement the value till 0
+  $(".qtyminus").click(function (e) {
+    // Stop acting like a button
+    e.preventDefault();
+    // Get the field name
+    var fieldName = $(this).attr('field');
+    // Get its current value
+    var currentVal = parseInt($(this).parent().find('input[name=' + fieldName + ']').val());
+    // If it isn't undefined or its greater than 0
+    if (!isNaN(currentVal) && currentVal > 1) {
+      // Decrement one only if value is > 1
+      $(this).parent().find('input[name=' + fieldName + ']').val(currentVal - 1);
+      $(this).parent().find('.qtyplus').val("+").removeAttr('style');
+    } else {
+      // Otherwise put a 0 there
+      $(this).parent().find('input[name=' + fieldName + ']').val(1);
+      $(this).parent().find('.qtyminus').val("-").css('color', '#aaa');
+      $(this).parent().find('.qtyminus').val("-").css('cursor', 'not-allowed');
+    }
+  });
+
+  $('.datepicker input').datetimepicker({
+    format: 'L',
+    locale: 'ru',
+    minDate: new Date()
+});
 
 
 

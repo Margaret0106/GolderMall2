@@ -81,6 +81,17 @@ h2 {
 	}
 }
 
+h3 {
+	font-family: $font-primary-semibold;
+	font-size: 30px;
+	@media (max-width: 1024px) {
+		font-size: 26px;
+	}
+	@media (max-width: 640px) {
+		font-size: 20px;
+	}
+}
+
 h4 {
 	font-family: $font-primary-bold;
 	font-size: 25px;

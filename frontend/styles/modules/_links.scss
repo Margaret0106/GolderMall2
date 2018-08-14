@@ -30,6 +30,9 @@ a.back-link {
   }
   &.product-back-link {
     margin-top: 0;
+    @media (max-width: 1024px) {
+      float: none;
+    }
   }
   svg {
     margin-right: 10px;
