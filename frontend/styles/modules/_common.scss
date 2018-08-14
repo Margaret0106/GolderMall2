@@ -699,6 +699,7 @@
     @media (max-width: 991px) {
         width: 75px;
         height: 75px;
+        margin-top: 10px;
     }
 }
 
@@ -783,4 +784,9 @@
         border: 1px solid #9ca8b8;
         padding: 5px;
     }
+}
+
+.rekvizit-block {
+    display: none;
+    padding-top: 10px;
 }

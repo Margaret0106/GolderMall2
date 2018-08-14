@@ -26,17 +26,32 @@ h1 {
 			margin: 10px 0;
 		}
 	}
+	&.small-title {
+		font-size: 30px;
+	}
 	@media (max-width: 1400px) {
 		font-size: 45px;
+		&.small-title {
+			font-size: 28px;
+		}
 	}
 	@media (max-width: 1024px) {
 		font-size: 35px;
+		&.small-title {
+			font-size: 26px;
+		}
 	}
 	@media (max-width: 640px) {
 		font-size: 25px;
+		&.small-title {
+			font-size: 20px;
+		}
 	}
 	@media (max-width: 480px) {
 		font-size: 20px;
+		&.small-title {
+			font-size: 16px;
+		}
 	}
 }
 

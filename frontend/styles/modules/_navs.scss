@@ -82,6 +82,11 @@
 			.sub-menu-fullwidth {
 				display: flex;
 			}
+			.nav-link {
+				color: #fff;
+				transition: none;
+				background: #3a3655;
+			}
 		}
 		&.has-child {
 			position: relative;
@@ -304,6 +309,9 @@
 	margin-left: 0;
 	width: 100%;
 	padding: 0;
+	.main-menu--footer & {
+		bottom: 60px;
+	}
 	li {
 		display: block;
 		a {
@@ -355,6 +363,10 @@
 		margin-left: 0; // width: 100%;
 		padding: 0;
 		top: 0;
+		.main-menu--footer & {
+			bottom: 0px;
+			top: auto;
+		}
 	}
 }
 
@@ -367,7 +379,10 @@
 	background: #57546e; // display: flex;
 	color: #fff;
 	display: none;
-	box-shadow: 0 7px 25px rgba(#3a3655, .5)
+	box-shadow: 0 7px 25px rgba(#3a3655, .5);
+	.main-menu--footer & {
+		bottom: 60px;
+	}
 }
 
 .sub-menu__column {
@@ -427,9 +442,8 @@
 		display: flex;
 		@media (max-width: 480px) {
 			span {
-				font-size: 12px;
+				font-size: 10px;
 			}
-			
 		}
 		a>* {
 			vertical-align: middle
@@ -479,6 +493,10 @@ ul.mobile-menu--child {
 				font-size: 20px;
 				padding: 10px 15px;
 			}
+			@media (max-width: 375px) {
+				font-size: 18px;
+				padding: 10px 15px;
+			}
 		}
 	}
 	li {
@@ -493,6 +511,9 @@ ul.mobile-menu--child {
 			position: absolute;
 			top: 20px;
 			right: 5px;
+			@media (max-width: 375px) {
+				top: 18px;
+			}
 		}
 	}
 	li+li {
@@ -548,7 +569,7 @@ ul.mobile-menu--child {
 			color: #4e586e;
 			background: #fff;
 			@media (max-width: 480px) {
-				font-size: 20px;
+				font-size: 18px;
 				padding: 10px 15px;
 			}
 		}
@@ -573,13 +594,13 @@ ul.mobile-menu--child {
 		width: 25px;
 		margin-right: 5px;
 		position: relative;
-		top: -2px;
+		top: -4px;
 	}
 	a {
 		transition: 0;
 	}
 	@media (max-width: 480px) {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -589,10 +610,10 @@ ul.mobile-menu--child {
 		padding-left: 15px;
 		font-size: 26px;
 		@media (max-width: 480px) {
-			font-size:18px;
+			font-size:16px;
 		}
 		li {
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -608,5 +629,24 @@ ul.mobile-menu--child {
 	display: none;
 	&.open {
 		display: block;
+	}
+	.close-menu {
+		position: absolute;
+		top: 25px;
+		right: 10px;
+		span {
+			width: 20px;
+			height: 2px;
+			background: #fff;
+			display: block;
+			transform: rotate(45deg);
+			position: relative;
+		}
+		span:first-child {
+			top: 2px;
+		}
+		span:nth-child(2) {
+			transform: rotate(135deg)
+		}
 	}
 }

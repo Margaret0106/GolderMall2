@@ -414,7 +414,7 @@ img.mobile {
                 width:160px;
             }
             @media (max-width: 640px) {
-                width:130px;
+                width: 130px;
             }
         }
         .btn+.btn {
@@ -594,21 +594,20 @@ img.mobile {
 
 .product-table {
     width: 100%;
+    table-layout: fixed;
     tr {
         border-bottom: 1px solid #e6e9ef;
         td {
             height: 35px;
             width: 50%;
-            padding: 10px 0;
+            padding: 10px 10px 0 0;
         }
     }
-    @media (max-width: 640px) {
-        tr td:first-child {
-            width: 70%;
-        }
-        tr td:nth-child(2) {
-            width: 30%;
-        }
+    tr td:first-child {
+        width: 70%;
+    }
+    tr td:nth-child(2) {
+        width: 30%;
     }
 }
 
@@ -815,6 +814,10 @@ img.mobile {
     border-bottom: 1px solid #f0f1f3;
     padding-bottom: 20px;
     margin-bottom: 25px;
+    a {
+        border-bottom: 1px dashed;
+        outline: none;
+    }
     @media (max-width: 991px) {
         font-size: 16px;
         margin-bottom: 15px;

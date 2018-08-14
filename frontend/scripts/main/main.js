@@ -336,6 +336,11 @@ $(document).ready(function () {
     $('.menu-overlay').removeClass('open');
   })
 
+  $('.show-rekvizit').on('click', function(e) {
+    e.preventDefault();
+    $(this).next('.rekvizit-block').slideToggle();
+  })
+
 
 
 });
