@@ -270,7 +270,71 @@ $(document).ready(function () {
     format: 'L',
     locale: 'ru',
     minDate: new Date()
-});
+  });
+
+  let $mobileLink = $('.mobile-menu--child>li.has-child:not(.dropdown-show)>a');
+  $mobileLink.on('click', function (e) {
+    e.preventDefault();
+    $('.main-mobile-container').addClass('active');
+    $(this).closest('.has-child').addClass('dropdown-show');
+    $('.mobile-menu').addClass('white');
+    $('.mobile-back').show();
+    $('.mobile-back').addClass('step1');
+    console.log(1)
+  })
+  let $mobileChildLink = $('.mobile-submenu>li.has-child:not(.dropdown-show)>a');
+  $mobileChildLink.on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('.mobile-submenu').addClass('active');
+    $('.has-child.dropdown-show').addClass('active');
+    $(this).closest('.has-child').addClass('dropdown-show');
+    $('.mobile-back').removeClass('step1');
+    $('.mobile-back').addClass('step2');
+    console.log(2)
+  })
+
+  let $backLink = $('.mobile-back a');
+  $backLink.on('click', function (e) {
+    e.preventDefault();
+    if ($('.step1').length > 0) {
+      $('.main-mobile-container').removeClass('active');
+      $('.has-child').removeClass('dropdown-show');
+      $('.mobile-menu').removeClass('white');
+      $('.mobile-back').hide();
+      $('.mobile-back').removeClass('step1');
+      console.log('.step1')
+    }
+    else if ($('.step2').length > 0) {
+      $('.main-mobile-container').addClass('active');
+      $('.mobile-submenu').removeClass('active');
+      $('.has-child.dropdown-show').removeClass('active');
+      $('.mobile-submenu .has-child.dropdown-show').removeClass('dropdown-show');      
+      $('.mobile-back').removeClass('step2');
+      $('.mobile-back').addClass('step1');
+      console.log('.step2')
+    }
+    console.log($backLink.hasClass('step1'))
+  })
+
+  $('.dropdown-show a').on('click', function (e) {
+    e.preventDefault();
+
+    console.log(3)
+  })
+
+  $('.mobile-menu-link').on('click', function(e) {
+    e.preventDefault();
+    $('.mobile-menu').toggleClass('open');
+    $('html, body').toggleClass('menu-open');
+    $('.menu-overlay').toggleClass('open');
+  })
+
+  $('.menu-overlay').on('click', function(e) {
+    e.preventDefault();
+    $('.mobile-menu').removeClass('open');
+    $('html, body').removeClass('menu-open');
+    $('.menu-overlay').removeClass('open');
+  })
 
 
 

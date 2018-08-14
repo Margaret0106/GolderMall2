@@ -141,6 +141,29 @@
         font-size: 14px;
         font-family: "ibm_plex_sansbold", Helvetica, Arial, sans-serif;
 	}
+	.dropdown-menu {
+		border: 0;
+		background: #fff;
+		border-radius: 0;
+		font-weight: normal;
+		font-family: $font-primary-regular;
+		li {
+			font-weight: normal;
+			font-family: $font-primary-regular;
+			a {
+				text-transform: none;
+				font-weight: normal;
+				font-family: $font-primary-regular;
+				padding: 10px 20px;
+			}
+			&:hover {
+				a {
+					background: #00aeef;
+					color: #fff;
+				}
+			}
+		}
+	}
   }
 
 

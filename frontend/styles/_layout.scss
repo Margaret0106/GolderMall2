@@ -1,6 +1,10 @@
 html,
 body {
   height: 100%;
+  .menu-open {
+    position: fixed;
+    overflow: hidden;
+  }
 }
 
 body {
