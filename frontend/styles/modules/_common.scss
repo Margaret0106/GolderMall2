@@ -790,3 +790,58 @@
     display: none;
     padding-top: 10px;
 }
+
+.sp-thumbnail-arrows {
+    width: 100%;
+    bottom: 55px;
+}
+
+.sp-previous-thumbnail-arrow {
+    left: -15px;
+}
+
+.sp-next-thumbnail-arrow {
+    right: -15px;
+}
+
+.quick-order {
+    display: flex;
+    @media (max-width: 640px) {
+        flex-wrap: wrap;
+    }
+    &-image {
+        width: 40%;
+        img {
+            max-width: 100%
+        }
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+     }
+    &-info {
+        width: 60%;
+        text-align: left;
+        padding-left: 20px;
+        @media (max-width: 640px) {
+            width: 100%;
+            padding-left: 0;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+            font-family: 'ibm_plex_sanssemibold';
+            margin-bottom: 25px;
+            @media (max-width: 640px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &__price {
+            font-weight: bold;
+            font-size: 22px;
+            @media (max-width: 640px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -341,6 +341,8 @@ $(document).ready(function () {
     $(this).next('.rekvizit-block').slideToggle();
   })
 
+  $('.sp-thumbnail-arrows').appendTo('.slider-pro'); 
+  
 
 
 });

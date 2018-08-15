@@ -460,7 +460,7 @@ img.mobile {
 .slider-pro {
     max-width: calc(100% - 100px) !important;
     @media (max-width: 640px) {
-        max-width: 100% !important;
+        max-width: calc(100% - 50px) !important;
     }
 }
 
